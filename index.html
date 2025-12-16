@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jump Mania | Game Portfolio</title>
+
+  <style>
+    :root {
+      --bg-dark: #0b0e24;
+      --bg-light: #1b1f4a;
+      --accent: #6cffc6;
+      --text: #ffffff;
+      --muted: #b0b6ff;
+      --card: #151944;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, var(--bg-light), var(--bg-dark));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 5rem 2rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      margin-top: 2rem;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      display: block;
+      margin: 2rem auto;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    a.link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HOME / TITLE SCREEN -->
+  <header id="home">
+    <h1>JUMP MANIA</h1>
+    <p>A video game development portfolio</p>
+    <nav>
+      <a href="#project">Project</a>
+      <a href="#development">Development</a>
+      <a href="#about">About Me</a>
+    </nav>
+  </header>
+
+  <!-- PROJECT SECTION -->
+  <section id="project">
+    <h2>Project</h2>
+    <div class="card">
+      <p>
+        <strong>Jump Mania</strong> is a platform-style game focused on movement,
+        collectibles, and player skill. The goal of the game is to navigate levels,
+        collect coins, avoid hazards, and reach the endpoint.
+      </p>
+
+      <!-- INSERT GAME VIDEO BELOW -->
+      <!-- <video src="jumpmania.mp4" controls style="width:100%; margin-top:2rem;"></video> -->
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT SECTION -->
+  <section id="development">
+    <h2>Development</h2>
+    <div class="card">
+      <p>
+        I started developing this game by first learning how Unreal Engine works
+        and how to use it, and I did this by creating my own mini project that was
+        a simple FPS.
+      </p>
+
+      <p>
+        I then started developing the game and first began by setting up the coin
+        and collectable mechanic.
+      </p>
+
+      <p>
+        Next I worked on getting the player’s health and lives system working,
+        which took a bit of a challenge, but thankfully I got it all working.
+        After that, I added player hazards, the endpoint of the game, and finally
+        completed all of the UI to reach the final version of the game.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card center">
+
+      <!-- ABOUT ME PHOTO -->
+      <img src="me.jpg" alt="About me photo" />
+
+      <p>
+        I am a major fan of video games who has always wanted to get into game
+        development. Some of the games I enjoy are <strong>Super Mario 3D World</strong>
+        and <strong>Astro Bot</strong>, and you can find more about me and my work
+        in my own portfolio.
+      </p>
+
+      <p style="margin-top:1rem;">
+        <a class="link" href="https://empexpo15.github.io" target="_blank">Visit my main portfolio</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Jump Mania Portfolio
+  </footer>
+
+</body>
+</html>
